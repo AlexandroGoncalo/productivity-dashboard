@@ -1,0 +1,195 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+/* Header Styles */
+.site-header {
+    padding: 20px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-text h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.header-text p {
+    font-size: 14px;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.site-header button {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.site-header button:hover {
+    background-color: #334155;
+}
+/* Hero Styles */
+.dashboard-hero {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #020617;
+    border-radius: 16px;
+    margin-top: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #94a3b8;
+    max-width: 520px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hero-content button:hover {
+    background-color: #2563eb;
+}
+/* Overview and Cards Styles */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #9ca3af;
+    line-height: 1.5;
+}
+
+.overview-section {
+    padding: 0 20px 60px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.overview-section h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+   
+}
+/* Footer Styles */
+.footer-content {
+    padding: 30px 20px;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* Responsive Styles for tablets and smaller devices */
+@media (max-width: 900px){
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive Styles for mobile devices */
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .hero-content p {
+        font-size: 15px;
+    }
+    .dashboard-hero {
+        padding: 40px 16px;
+    }
+    .overview-section {
+        padding: 0 16px 40px;
+    }
+    .site-header button {
+        width: 100%;
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
