@@ -16,6 +16,17 @@ The dashboard interface includes:
 - Clean and modern dark UI design  
 - Fully responsive layout for desktop, tablet, and mobile  
 
+## 📸 Responsive Preview
+
+### Desktop
+![Desktop Preview](assets/images/dashboard-desktop.png)
+
+### Tablet
+![Tablet Preview](assets/images/dashboard-tablet.png)
+
+### Mobile
+![Mobile Preview](assets/images/dashboard-mobile.png)
+
 ---
 
 ## 🧠 Features
